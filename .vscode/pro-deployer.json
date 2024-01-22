@@ -1,0 +1,38 @@
+{
+	"enableStatusBarItem": true,
+	"enableQuickPick": true,
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/*/",
+		".vscode/*/"
+	],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "dbooker29.mccweb.net",
+			"port": 21,
+			"user": "dbooker29",
+			"password": "PRG147u022024",
+			"dir": "/public_html",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "dbooker29.mccweb.net",
+			"port": 22,
+			"user": "dbooker29",
+			"password": "PRG147u022024",
+			"dir": "/public_html",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
