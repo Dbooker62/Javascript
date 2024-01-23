@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#myImage {
+    width: 100%;
+    transition: width 0.5s ease;
+}
+
+#myParagraph {
+    color: #333;
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.action-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
