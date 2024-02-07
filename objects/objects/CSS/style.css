@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #39b7da;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.book {
+    background: #53b475;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #026e04;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.author,
+.genre,
+.year {
+    font-size: 16px;
+    margin-bottom: 2px;
+    color: #000000;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
