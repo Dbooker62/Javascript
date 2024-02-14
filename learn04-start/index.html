@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript With Forms</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/calculate.js"></script>
+</head>
+
+<body onLoad="addDate()">
+
+    <header>
+        <h1>JavaScript and Forms</h1>
+    </header>
+    <main class="container">
+        <form>
+            <div class="top">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="fname"><br>
+                <p id="today"></p>
+                <p>&nbsp;</p>
+                <p id="myDate"></p>
+                <label for="rooms">How Many Rooms:</label>
+                <label for="numRooms">Number of Rooms:</label>
+                <input type="number" id="numRooms" name="numRooms" min="1" max="10" value="1">
+
+            </div>
+
+            <div id="roomsContainer"></div>
+
+
+            <div class="bottom">
+                <button type="button" onclick="estimate()">Get Estimate!</button>
+                <h3>Estimate:</h3>
+                <p id="estimate"></p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Daniel Booker. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
