@@ -12,7 +12,7 @@ function generateRoomInputs() {
     const roomsContainer = document.getElementById("roomsContainer");
     roomsContainer.innerHTML = ''; // Clear previous inputs
     let numberOfRooms = parseInt(document.getElementById("numRooms").value);
-
+ 
     for (let i = 1; i <= numberOfRooms; i++) {
         roomsContainer.innerHTML += `
             <div class="room" id="room${i}">
