@@ -9,7 +9,7 @@ function addDate() {
 
 
 function generateRoomInputs() {
-    const roomsContainer = document.getElementById("roomsContainer");
+    const roomsContainer = document.getElementById("roomsContainer"); 
     roomsContainer.innerHTML = ''; // Clear previous inputs
     let numberOfRooms = parseInt(document.getElementById("numRooms").value);
  
