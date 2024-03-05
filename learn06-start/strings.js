@@ -18,7 +18,7 @@ function start() {
     let firstName = fullName.slice(0, 6);
     document.getElementById("first").innerHTML = firstName;
 
-    let middleName = fullName.substring(7, 8);  // 
+    let middleName = fullName.substring(7, 8); 
     document.getElementById("middle").innerHTML = middleName;
 
     let lastName = fullName.substr(-6, 6);
@@ -26,7 +26,7 @@ function start() {
 
     // Replacing string content
     let major = "I'm majoring in Physical Therapy at McHenry County College";
-    let newMajor = major.replace("Physical Therapy", "Mobile Application");  // Replace with your major
+    let newMajor = major.replace("Physical Therapy", "Mobile Application");
     document.getElementById("major").innerHTML = newMajor;
 
     // Convert to upper case
