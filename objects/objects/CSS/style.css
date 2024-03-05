@@ -1,54 +1,81 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background: #39b7da;
-    color: #000000;
+    padding: 20px; 
+    background: #f4f4f4; 
+    color: #333; 
 }
+
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto; 
     overflow: hidden;
+    background: white; 
+    padding: 20px;
+    border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 h1 {
     text-align: center;
     padding: 20px;
+    color: #39b7da; 
+    margin-bottom: 30px; 
 }
 
 .book {
-    background: #53b475;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+.title, .author, .genre, .year {
+    margin-bottom: 10px; color: #0275d8; 
 }
 
 .title {
-    color: #026e04;
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 24px; 
+    font-weight: bold; */
 }
 
-.author,
-.genre,
-.year {
-    font-size: 16px;
-    margin-bottom: 2px;
-    color: #000000;
+.author, .genre, .year {
+    font-size: 18px; 
 }
+
 
 .description {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.6;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666; 
 }
 
-/* Add responsiveness */
+
+.book:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 95%; 
+        padding: 10px; }
+
+    .title {
+        font-size: 20px; 
+    }
+
+    .author, .genre, .year {
+        font-size: 16px; 
+    }
+
+    .book {
+        padding: 15px; 
     }
 }
