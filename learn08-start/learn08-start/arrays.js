@@ -7,7 +7,7 @@ function start() {
 
     // Use the index to print the month May from the months array to the may paragraph
     document.getElementById("may").textContent = months[4];
-
+ 
     // Print the length of the month array to the length paragraph
     document.getElementById("length").textContent = months.length;
 
