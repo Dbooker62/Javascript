@@ -1,6 +1,4 @@
 /* --------------------- CSS Reset -------------------- */
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -10,10 +8,10 @@ html,
 body,
 div,
 span,
-applet,
+applet, 
 object,
 iframe,
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -96,9 +94,7 @@ video {
     box-sizing: border-box;
 }
 
-
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -141,9 +137,7 @@ table {
     border-spacing: 0;
 }
 
-
-/*  ---------------------- Variables ---------------------- */
-
+/* ---------------------- Variables ---------------------- */
 :root {
     --primary: #512da8;
     --primary-light: #8559da;
@@ -155,9 +149,7 @@ table {
     --text-dark: #000000;
 }
 
-
-/* ---------------------- layout ------------------------- */
-
+/* ---------------------- Layout ------------------------- */
 body {
     font-family: arial, helvetica, sans-serif;
     line-height: 1.5;
@@ -188,28 +180,30 @@ footer {
     color: var(--text-light);
 }
 
-.left {
-    clear: both;
-    float: left;
+.left,
+.right,
+.center {
     padding: 20px;
+}
+
+.left {
+    float: left;
 }
 
 .right {
-    clear: both;
     float: right;
-    padding: 20px;
 }
 
 .center {
-    clear: both;
     display: block;
-    margin: 10px auto;
+    margin: auto;
 }
 
 img {
-    box-sizing: border-box;
-    width: 40%;
+    width: 100%;
+    max-width: 400px;
     margin: 20px auto;
+    display: block;
 }
 
 header {
@@ -223,116 +217,55 @@ nav {
     text-align: center;
 }
 
-h2 {
-    color: var(--primary);
-    text-align: left;
-    margin: 20px;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
+h1,
+h2,
+h3 {
+    margin: 20px 0;
 }
 
 .buttons {
-    width: 30%;
-    margin: 10px auto;
     text-align: center;
 }
 
 button {
-    color: var(--text-light);
     border: 2px solid var(--primary-dark);
     background: var(--primary-dark);
-    text-decoration: none;
+    color: var(--text-light);
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
 }
 
 button:hover {
-    color: var(--primary-dark);
     background: var(--secondary-light);
+    color: var(--primary-dark);
 }
 
+/* ---------------------- JavaScript Content Style ---------------------- */
+/* Styles for the JavaScript content */
 p {
-    padding: 10px;
-}
-
-#word {
-    padding-left: 60px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-
-/* Enhanced styling for paragraphs and headers within main content */
-main h3 {
-    background-color: var(--primary-light);
-    color: var(--text-light);
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-main p {
-    background-color: #f4f4f4;
-    color: var(--text-dark);
     padding: 15px;
-    margin-bottom: 20px;
-    border-left: 4px solid var(--primary-dark);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border-left: 5px solid var(--primary);
 }
 
-main p:hover {
-    transform: scale(1.03);
-    background-color: var(--secondary-light);
+h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
 }
 
-/* Additional styling for structured layout and text readability */
-main {
-    background-color: var(--text-light);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Styling headers outside of main for consistency */
-header h1 {
-    background-color: var(--primary-dark);
-    color: var(--text-light);
-    padding: 20px 0;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-/* responsive*/
-
-* {
-    box-sizing: border-box;
-}
-
-.row::after {
+/* ---------------------- Responsive Design ---------------------- */
+/* Adjustments for different screen sizes */
+.row:after {
     content: "";
-    clear: both;
     display: table;
+    clear: both;
 }
 
 [class*="col-"] {
     float: left;
     padding: 15px;
-}
-
-
-/* For mobile phones: */
-
-[class*="col-"] {
-    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -389,7 +322,7 @@ header h1 {
 
 @media only screen and (min-width: 768px) {
 
-    /* For desktop: */
+    /* For desktops: */
     .col-1 {
         width: 8.33%;
     }

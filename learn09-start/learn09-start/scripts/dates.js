@@ -10,7 +10,7 @@ document.getElementById("basic").innerHTML = basicDate;
 const today = new Date();
 document.getElementById("today").innerHTML = `${today.getFullYear()}-${(today.getMonth() + 1).toString().padStart(2, '0')}-${today.getDate().toString().padStart(2, '0')}`;
 
-
+ 
 // Create a new date variable based on the dateString and store your birthday in it
 // display the variable in the birthday paragraph
 const birthday = new Date("1990-01-01"); // Change to your birthday
