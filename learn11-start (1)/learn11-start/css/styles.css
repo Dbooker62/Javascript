@@ -1,14 +1,16 @@
 /* --------------------- CSS Reset -------------------- */
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain),,.
+   License: none (public domain)
 */
 
 html,
 body,
 div,
 span,
-applet, 
+applet,
 object,
 iframe,
 h1,
@@ -94,7 +96,9 @@ video {
     box-sizing: border-box;
 }
 
+
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -137,9 +141,11 @@ table {
     border-spacing: 0;
 }
 
-/* ---------------------- Variables ---------------------- */
+
+/*  ---------------------- Variables ---------------------- */
+
 :root {
-    --primary: #512da8;
+    --primary: #FF5722;
     --primary-light: #8559da;
     --primary-dark: #140078;
     --secondary: #ffc107;
@@ -149,7 +155,9 @@ table {
     --text-dark: #000000;
 }
 
-/* ---------------------- Layout ------------------------- */
+
+/* ---------------------- layout ------------------------- */
+
 body {
     font-family: arial, helvetica, sans-serif;
     line-height: 1.5;
@@ -180,30 +188,28 @@ footer {
     color: var(--text-light);
 }
 
-.left,
-.right,
-.center {
+.left {
+    clear: both;
+    float: left;
     padding: 20px;
 }
 
-.left {
-    float: left;
-}
-
 .right {
+    clear: both;
     float: right;
+    padding: 20px;
 }
 
 .center {
+    clear: both;
     display: block;
-    margin: auto;
+    margin: 10px auto;
 }
 
 img {
-    width: 100%;
-    max-width: 400px;
+    box-sizing: border-box;
+    width: 40%;
     margin: 20px auto;
-    display: block;
 }
 
 header {
@@ -211,56 +217,66 @@ header {
     color: var(--text-light);
     min-height: 80px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 nav {
     text-align: center;
 }
 
-h1,
-h2,
-h3 {
-    margin: 20px 0;
+h2 {
+    color: var(--primary);
+    text-align: left;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
 }
 
 .buttons {
+    width: 30%;
+    margin: 10px auto;
     text-align: center;
 }
 
 button {
+    color: var(--text-light);
     border: 2px solid var(--primary-dark);
     background: var(--primary-dark);
-    color: var(--text-light);
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 button:hover {
-    background: var(--secondary-light);
     color: var(--primary-dark);
+    background: var(--secondary-light);
 }
 
-/* ---------------------- JavaScript Content Style ---------------------- */
-/* Styles for the JavaScript content */
 p {
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #f4f4f4;
-    border-left: 5px solid var(--primary);
+    padding: 10px;
 }
 
-h3 {
-    padding-bottom: 10px;
-    border-bottom: 2px solid var(--secondary);
+#word {
+    padding-left: 60px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-/* ---------------------- Responsive Design ---------------------- */
-/* Adjustments for different screen sizes */
-.row:after {
+
+/* responsive*/
+
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
 }
 
 [class*="col-"] {
@@ -268,105 +284,88 @@ h3 {
     padding: 15px;
 }
 
-@media only screen and (min-width: 600px) {
 
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-s-1 {
         width: 8.33%;
     }
-
     .col-s-2 {
         width: 16.66%;
     }
-
     .col-s-3 {
         width: 25%;
     }
-
     .col-s-4 {
         width: 33.33%;
     }
-
     .col-s-5 {
         width: 41.66%;
     }
-
     .col-s-6 {
         width: 50%;
     }
-
     .col-s-7 {
         width: 58.33%;
     }
-
     .col-s-8 {
         width: 66.66%;
     }
-
     .col-s-9 {
         width: 75%;
     }
-
     .col-s-10 {
         width: 83.33%;
     }
-
     .col-s-11 {
         width: 91.66%;
     }
-
     .col-s-12 {
         width: 100%;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
-    /* For desktops: */
+    /* For desktop: */
     .col-1 {
         width: 8.33%;
     }
-
     .col-2 {
         width: 16.66%;
     }
-
     .col-3 {
         width: 25%;
     }
-
     .col-4 {
         width: 33.33%;
     }
-
     .col-5 {
         width: 41.66%;
     }
-
     .col-6 {
         width: 50%;
     }
-
     .col-7 {
         width: 58.33%;
     }
-
     .col-8 {
         width: 66.66%;
     }
-
     .col-9 {
         width: 75%;
     }
-
     .col-10 {
         width: 83.33%;
     }
-
     .col-11 {
         width: 91.66%;
     }
-
     .col-12 {
         width: 100%;
     }

@@ -10,7 +10,7 @@ function start() {
     document.getElementById('random').innerText = `Random: ${Math.random()}`;
 
 
-    // Random: https://www.w3schools.com/js/js_random.asp
+    // Random: https://www.w3schools.com/js/js_random.asppp
     document.getElementById('random2').innerText = `Random Integer(1 - 100): ${Math.floor(Math.random() * 100) + 1}`;
 
 
