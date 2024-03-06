@@ -1,6 +1,8 @@
 function start() {
     // Write your name to the name h1
+
     document.getElementById("name").textContent = "Daniel S Booker";
+
 
     // Create an array called months that holds all the months of the year
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
