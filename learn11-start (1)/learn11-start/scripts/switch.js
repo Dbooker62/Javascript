@@ -6,7 +6,7 @@ function calculate() {
     let year = parseInt(document.getElementById("year").value);
     let zodiac = '';
 
-    // Determine the Chinese Zodiac sign
+    // Determine the Chinese Zodiac sign.
     switch (year % 12) {
         case 0:
             chi = "Monkey";
