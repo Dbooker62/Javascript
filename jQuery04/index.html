@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="main-heading">jQuery04</h1>
+    </div>
+    <div class="style-buttons">
+        <button id="lightTheme">Light Theme</button>
+        <button id="darkTheme">Dark Theme</button>
+        <button id="increaseFont">Increase Font Size</button>
+        <button id="decreaseFont">Decrease Font Size</button>
+    </div>
+    <div class="form-container">
+        <form id="infoForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <label for="schoolName">School Name:</label>
+            <input type="text" id="schoolName" name="schoolName"><br><br>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade"><br><br>
+            <label for="hobby">What is your Hobby?</label>
+            <input type="text" id="hobby" name="hobby"><br><br>
+            <button type="button" id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <div id="displayInfo"></div>
+
+    <footer>
+        <p>Presented By Daniel Booker</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
